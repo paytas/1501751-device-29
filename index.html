@@ -4,56 +4,85 @@
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
   </head>
+  <body>
+    <!-- Не забыть скрыть заголовок -->
+    <h1>Магазин электроники «DEVICE»</h1>
   <header>
-    <a>
-      <img src="img/main-logo-black.svg" width="163" height="35" alt="Логотип магазина «DEVICE»">
-    </a>
     <nav>
       <section>
-      <p>Поиск по сайту</p>
+        <a>
+          <img src="img/main-logo-black.svg" width="163" height="35" alt="Логотип магазина «DEVICE»">
+        </a>
+        <form action="">
+          <input type="text" placeholder="Поиск по сайту" formaction="#">
+        </form>
       </section>
       <section>
       <a href="blank.html">Войти</a>
-      <a href="blank.html">Выйти</a>
       <ul>
         <li>Сравнить</li>
         <li>Корзина</li>
       </ul>
       </section>
       <ul>
-        <li><a href="catalog.html">Каталог товаров</a></li>
+        <!-- Pop-Up Menu -->
+        <li>
+          <div>
+            <a href="catalog.html">Каталог товаров</a>
+            <ul>
+              <li><a href="#">Виртуальная реальность</a></li>
+              <li><a href="#">Фитнес-браслеты</a></li>
+              <li><a href="#">вадрокоптер</a></li>
+              <li><a href="#">Моноподы для селфи</a></li>
+              <li><a href="#">Умные часы</a></li>
+              <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+           <div></div>
+        </li>
         <li><a href="delivery.html">Доставка</a></li>
         <li><a href="warranty.html">Гарантия</a></li>
         <li><a href="contact.html">Контакты</a></li>
       </ul>
     </nav>
   </header>
-  <body>
     <a>
       <img src="img/white-rectangle.svg" width="163" height="35" alt="Логотип магазина «DEVICE»">
     </a>
     <!-- Слайдер. Начало -->
     <section>
-      <figure>
-        <a href="#">
-          <img src="img/monopod.png" width="211" height="229" alt="Монопод">
-        </a>
-      </figure>
+      <ul>
+      <!-- слайд 1 -->
+       <li><img src="#" width="211" height="229" alt="Монопод">
       <h2>Делай селфи,<br>как Бен Стиллер!</h2>
       <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
       Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
       <a href="monopod.html">Подробнее</a>
-      <div>
-        <button type="button" disabled>Назад</button>
-        <button type="button">Вперед</button>
-      </div>
-      <div>
-        <ul>
-          <li>8,5 м<br>Длина палки</li>
-          <li>5 кг<br>Вес палки</li>
-          <li>Карбон<br>Материал</li>
-        </ul>
-      </div>
+      <table>
+         <tr><td>8,5 м</td> <td>5 кг</td> <td>Карбон</td></tr>
+         <tr><td>Длина палки</td> <td>Вес палки</td> <td>Материал</td></tr>
+      </table></li>
+      <!-- слайд 2 -->
+      <li><img src="#" width="211" height="229" alt="Фитнес-браслет">
+        <h2>Худеем<br>правильно!</h2>
+        <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
+          не пропускать занятия и соблюдать диету.</p>
+        <a href="fitnesband.html">Подробнее</a>
+        <table>
+           <tr><td>48 часов</td></tr>
+           <tr><td>Без подзарядки</td></tr>
+        </table></li>
+        <!-- слайд 3 -->
+        <li><img src="#" width="211" height="229" alt="Квадрокоптер">
+          <h2>Порхает как бабочка,<br>жалит как пчела!</h2>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+            мощным лазером, замаскированным под стандартную камеру.</p>
+          <a href="quadcopter.html">Подробнее</a>
+          <table>
+             <tr><td>800 м</td> <td>50 м</td></tr>
+             <tr><td>Дальность полета</td><td>Радиус поражения</td></tr>
+             <tr></tr>
+          </table></li>
+       </ul>
     </section>
     <!-- Слайдер. Конец -->
   <section>
@@ -101,8 +130,8 @@
       </ul>
       <!-- Логотипы партнеров. Конец -->
       </section>
-<section>
-<!-- Нижний информационный блок (О нас, контракты) -->
+  <section>
+  <!-- Нижний информационный блок (О нас, контракты) -->
   <div>
     <h2>О нас</h2>
     <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
@@ -118,40 +147,42 @@
 <h2>Контакты</h2>
 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
   проверить работоспособность покупки. Всякое бывает.</p>
-  <img src="img/map.png" width="560" height="222" alt="Расположение офиса на карте">
+  <img src="img/map.png" width="560" height="222" alt="Схема проезда">
   <a href="#">Напишите нам</a>
 </div>
 </section>
-
-</body>
   <footer>
+    <!-- 1 уровень -->
     <section>
+      <ul>
+    <li>
     <a>
       <img src="img/main-logo-yellow.svg" width="163" height="35" alt="Логотип магазина «DEVICE»">
     </a>
-    <p>г. Москва, ул. Строителей, 15</p>
-  </section>
-  <section>
-    <a href="login.html">Войти</a>
-    <a href="logout.html">Выйти</a>
-    <ul>
+    </li>
+    <li><a href="login.html">Войти</a></li>
       <li><a href="compare.html">Сравнить</a></li>
       <li><a href="cart.html">Корзина</a></li>
-    </ul>
-  </section>
+      </ul>
+    </section>
+     <!-- 2 уровень -->
   <ul>
+    <li>г. Москва, ул. Строителей, 15</li>
     <li><a href="delivery.html">Доставка</a></li>
     <li><a href="warranty.html">Гарантия</a></li>
     <li><a href="contact.html">Контакты</a></li>
+    <li><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></li>
   </ul>
-  <div><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-  <div>
+  <!-- 3 уровень -->
+  <section>
+    <ul>
+      <li><img src="img/yellow-rectangle.svg" width="80" height="7" alt="Декоративный элемент"></li>
+      <li><a href="#">Фейсбук</a></li>
+      <li><a href="#">Инстаграм</a></li>
+      <li><a href="#">Твиттер</a></li>
+    </ul>
+    <img src="img/htmlac-logo.svg" width="27" height="34" alt="HTML Academy">
+   </section>
   </footer>
-  <ul>
-    <li><img src="img/yellow-rectangle.svg" width="80" height="7" alt="Декоративный элемент"></li>
-    <li><a href="#">Фейсбук</a></li>
-    <li><a href="#">Инстаграм</a></li>
-    <li><a href="#">Твиттер</a></li>
-    <li><img src="img/htmlac-logo.svg" width="27" height="34" alt="HTML Academy"></li>
-  </ul>
+  </body>
 </html>
