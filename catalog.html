@@ -12,12 +12,7 @@
         <!-- Логотип -->
         <div>
           <a>
-            <img
-              src="img/main-logo-black.svg"
-              width="163"
-              height="35"
-              alt="Логотип магазина «DEVICE»"
-            />
+            <img src="img/main-logo-black.svg" width="163" height="35" alt="Логотип магазина «DEVICE»" />
           </a>
         </div>
         <!-- Первая секция шапки -->
@@ -56,62 +51,41 @@
     <main>
       <!-- Хлебные крошки -->
       <div>
-        <ol>
+        <ul>
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Каталог товаров</a></li>
           <li><a href="#">Моноподы для селфи</a></li>
-        </ol>
+        </ul>
       </div>
       <!-- Фильтр -->
-      <form>
-        <fieldset>
-          <!-- Стоимость (ползунок)  -->
-          <legend>Стоимость</legend>
-          <input type="range" min="0" max="10000" step="100" value="5000" />
-        </fieldset>
-        <fieldset>
-          <!-- Цвет -->
-          <legend>Цвет</legend>
-          <label
-            ><input
-              type="checkbox"
-              name="color"
-              checked
-              value="black"
-            />Чёрный</label
-          >
-          <label
-            ><input type="checkbox" name="color" value="white" />Белый</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="color"
-              checked
-              value="blue"
-            />Синий</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="color"
-              checked
-              value="red"
-            />Красный</label
-          >
-          <label
-            ><input type="checkbox" name="color" value="pink" />Розовый</label
-          >
-        </fieldset>
-        <fieldset>
-          <!-- TO-DO Bluetooth (радиокнопки) -->
-          <legend>Bluetooth</legend>
-          <p><input name="bluetooth" type="radio" value="enabled" />Есть</p>
-          <p><input name="bluetooth" type="radio" value="disabled" />Нет</p>
-        </fieldset>
-      </form>
+      <section>
+        <h2>Фильтр</h2>
+        <form>
+          <fieldset>
+            <!-- Стоимость (ползунок)  -->
+            <legend>Стоимость</legend>
+            <input type="range" min="0" max="10000" step="100" value="5000" />
+          </fieldset>
+          <fieldset>
+            <!-- Цвет -->
+            <legend>Цвет</legend>
+            <label><input type="checkbox" name="color" checked value="black" />Чёрный</label>
+            <label><input type="checkbox" name="color" value="white" />Белый</label>
+            <label><input type="checkbox" name="color" checked value="blue" />Синий</label>
+            <label><input type="checkbox" name="color" checked value="red" />Красный</label>
+            <label><input type="checkbox" name="color" value="pink" />Розовый</label>
+          </fieldset>
+          <fieldset>
+            <!-- TO-DO Bluetooth (радиокнопки) -->
+            <legend>Bluetooth</legend>
+            <p><input name="bluetooth" type="radio" value="enabled" />Есть</p>
+            <p><input name="bluetooth" type="radio" value="disabled" />Нет</p>
+          </fieldset>
+          <button type="button">Показать</button>
+        </form>
+      </section>
       <!-- Сортировка (вертикальный блок) -->
-      <div>
+      <section>
         <h2>Сортировка:</h2>
         <ul>
           <li><a href="#">По цене</a></li>
@@ -120,87 +94,55 @@
           <li><a href="#">По возрастанию</a></li>
           <li><a href="#">По убыванию</a></li>
         </ul>
-      </div>
+      </section>
       <!-- Карточки товаров (основной блок) -->
       <section>
         <h2>Карточки товаров</h2>
+        <ul>
+          <!--1 ячейка -->
+          <li>
+            <a href="selfie-stick-amateur.html"><img src="#" width="360" height="380"
+                alt="Любительская селфи-палка" /></a>
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+            <h3>Любительская селфи-палка <span>500 руб.</span></h3>
+          </li>
+          <!--2 ячейка -->
+          <li>
+            <a href="selfie-stick-pro.html"><img src="#" width="360" height="380"
+                alt="Профессиональная селфи-палка" /></a>
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+            <h3>Профессиональная<br>селфи-палка <span>1 500 руб.</span></h3>
+          </li>
+          <!--3 ячейка -->
+          <li>
+            <a href="selfie-stick-floating.html"><img src="#" width="360" height="380"
+                alt="Непотопляемая селфи-палка" /></a>
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+            <h3>Непотопляемая селфи-палка <span>2 500 руб.</span></h3>
+          </li>
+          <!--4 ячейка -->
+          <li>
+            <a href="selfie-stick-follow-me.html"><img src="#" width="360" height="380"
+                alt="Селфи-палка «Следуй за мной»" />
+            </a>
+            <button type="button">В корзину</button>
+            <button type="button">Добавить к сравнению</button>
+            <h3>Селфи-палка «Следуй за мной» <span>4 900 руб.</span></h3>
+          </li>
+        </ul>
         <div>
-          <!-- Контейнер-->
-          <div>
-            <!-- Ряд 1-->
-            <div>
-              <!-- Ячейка 1,1 -->
-              <a href="#"
-                ><img
-                  src="#"
-                  width="360"
-                  height="380"
-                  alt="Любительская селфи-палка"
-                />
-              </a>
-              <dl>
-                <dt>Любительская селфи-палка</dt>
-                <dd>500 руб.</dd>
-              </dl>
-            </div>
-            <div>
-              <!-- Ячейка 1,2 -->
-              <a href="#"
-                ><img
-                  src="#"
-                  width="360"
-                  height="380"
-                  alt="Любительская селфи-палка"
-                />
-              </a>
-              <dl>
-                <dt>Непотопляемая селфи-палка</dt>
-                <dd>2 500 руб.</dd>
-              </dl>
-            </div>
-          </div>
-          <div>
-            <!-- Ряд 2 -->
-            <div>
-              <!-- Ячейка 2,1 -->
-              <a href="#"
-                ><img
-                  src="#"
-                  width="360"
-                  height="380"
-                  alt="Профессиональная селфи-палка"
-                />
-              </a>
-              <dl>
-                <dt>Профессиональная <br />селфи-палка</dt>
-                <dd>1 500 руб.</dd>
-              </dl>
-            </div>
-            <div>
-              <!-- Ячейка 2,2 -->
-              <a href="#"
-                ><img
-                  src="#"
-                  width="360"
-                  height="380"
-                  alt="Селфи-палка «Следуй за мной»"
-                />
-              </a>
-              <dl>
-                <dt>Селфи-палка «Следуй за мной»</dt>
-                <dd>4 900 руб.</dd>
-              </dl>
-            </div>
-          </div>
           <!-- Постраничная навигация по каталогу товаров  -->
           <div>
-            <a href="#">Назад</a>
             <ul>
+              <li><a href="#">Назад</a></li>
               <li><a href="#">1</a></li>
               <li><a href="#">2</a></li>
               <li><a href="#">3</a></li>
+              <li><a href="#">Вперед</a></li>
             </ul>
-            <a href="#">Вперед</a>
           </div>
         </div>
       </section>
@@ -208,17 +150,13 @@
     <footer>
       <!-- 1 уровень -->
       <div>
+        <!-- Логотип -->
+        <div>
+          <a>
+            <img src="img/main-logo-yellow.svg" width="163" height="35" alt="Логотип магазина «DEVICE»" />
+          </a>
+        </div>
         <ul>
-          <li>
-            <a>
-              <img
-                src="img/main-logo-yellow.svg"
-                width="163"
-                height="35"
-                alt="Логотип магазина «DEVICE»"
-              />
-            </a>
-          </li>
           <li><a href="login.html">Войти</a></li>
           <li><a href="compare.html">Сравнить</a></li>
           <li><a href="cart.html">Корзина</a></li>
@@ -226,31 +164,23 @@
       </div>
       <!-- 2 уровень -->
       <div>
+        <p>г. Москва, ул. Строителей, 15</p>
         <ul>
-          <li>г. Москва, ул. Строителей, 15</li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contact.html">Контакты</a></li>
-          <li><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></li>
         </ul>
+        <p><a href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
       </div>
       <!-- 3 уровень -->
       <div>
         <ul>
-          <li>
-            <!-- Декоративный блок-->
-          </li>
           <li><a href="#">Фейсбук</a></li>
           <li><a href="#">Инстаграм</a></li>
           <li><a href="#">Твиттер</a></li>
         </ul>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img
-            src="img/htmlac-logo.svg"
-            width="27"
-            height="34"
-            alt="HTML Academy"
-          />
+          <img src="img/htmlac-logo.svg" width="27" height="34" alt="HTML Academy" />
         </a>
       </div>
     </footer>
