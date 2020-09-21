@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="ru">
+
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
   </head>
-  <body>
+
+  <body class="page-body">
+
     <!-- Не забыть скрыть заголовок -->
     <h1>Магазин электроники «DEVICE»</h1>
-    <header>
-      <nav>
+
+    <header class="page-header">
+      <nav class="site-navigation">
         <!-- Логотип -->
-        <div>
+        <div class="header-logo">
           <a>
             <img src="img/main-logo-black.svg" width="163" height="35" alt="Логотип магазина «DEVICE»" />
           </a>
@@ -19,7 +23,7 @@
         <div>
           <form action="search.html">
             <input type="search" placeholder="Поиск по сайту" />
-            <button type="submit">Найти</button>
+            <button class="button search-button" type="submit">Найти</button>
           </form>
           <div>
             <a href="user-profile.html">Валентин Петухов</a>
@@ -29,7 +33,7 @@
           </div>
         </div>
         <!-- Вторая секция шапки -->
-        <ul>
+        <ul class="na">
           <!-- Pop-Up Menu -->
           <li>
             <a href="catalog.html">Каталог товаров</a>
@@ -48,7 +52,8 @@
         </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="container">
       <!-- Хлебные крошки -->
       <div>
         <ul>
@@ -58,7 +63,7 @@
         </ul>
       </div>
       <!-- Фильтр -->
-      <section>
+      <section class="main-filter">
         <h2>Фильтр</h2>
         <form>
           <fieldset>
@@ -81,7 +86,7 @@
             <p><input name="bluetooth" type="radio" value="enabled" />Есть</p>
             <p><input name="bluetooth" type="radio" value="disabled" />Нет</p>
           </fieldset>
-          <button type="button">Показать</button>
+          <button class="button filter-button" type="button">Показать</button>
         </form>
       </section>
       <!-- Сортировка (вертикальный блок) -->
@@ -103,24 +108,24 @@
           <li>
             <a href="selfie-stick-amateur.html"><img src="#" width="360" height="380"
                 alt="Любительская селфи-палка" /></a>
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button cart-button" type="button">В корзину</button>
+            <button class="button comparsion-button" type="button">Добавить к сравнению</button>
             <h3>Любительская селфи-палка <span>500 руб.</span></h3>
           </li>
           <!--2 ячейка -->
           <li>
             <a href="selfie-stick-pro.html"><img src="#" width="360" height="380"
                 alt="Профессиональная селфи-палка" /></a>
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button cart-button" type="button">В корзину</button>
+            <button class="button comparsion-button" type="button">Добавить к сравнению</button>
             <h3>Профессиональная<br>селфи-палка <span>1 500 руб.</span></h3>
           </li>
           <!--3 ячейка -->
           <li>
             <a href="selfie-stick-floating.html"><img src="#" width="360" height="380"
                 alt="Непотопляемая селфи-палка" /></a>
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button cart-button" type="button">В корзину</button>
+            <button class="button comparsion-button" type="button">Добавить к сравнению</button>
             <h3>Непотопляемая селфи-палка <span>2 500 руб.</span></h3>
           </li>
           <!--4 ячейка -->
@@ -128,8 +133,8 @@
             <a href="selfie-stick-follow-me.html"><img src="#" width="360" height="380"
                 alt="Селфи-палка «Следуй за мной»" />
             </a>
-            <button type="button">В корзину</button>
-            <button type="button">Добавить к сравнению</button>
+            <button class="button cart-button" type="button">В корзину</button>
+            <button class="button comparsion-button" type="button">Добавить к сравнению</button>
             <h3>Селфи-палка «Следуй за мной» <span>4 900 руб.</span></h3>
           </li>
         </ul>
@@ -147,6 +152,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <!-- 1 уровень -->
       <div>
