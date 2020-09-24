@@ -1,0 +1,207 @@
+/* Fonts */
+
+@font-face {
+  font-weight: 300;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: local("Gilroy Light"), url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: "Gilroy";
+  font-style: normal;
+
+  src: local("Gilroy ExtraBold"),
+    url("../fonts/gilroyextrabold.woff2") format("woff2"),
+    url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: local("OpenSans Light"),
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: local("OpenSans"), url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+}
+
+/* Variables */
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-half-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+  --special-yellow: #f7e296;
+  --special-yellow-dark: #f0c52e;
+  --special-green: #91c92f;
+  --status-pink: #f6dada;
+  --basic-white: #ffffff;
+  --white-alpha30: rgba(255, 255, 255, 0.3);
+  --white-alpha60: rgba(255, 255, 255, 0.6);
+}
+
+.page {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: var(--basic-half-grey);
+  font-weight: 300;
+  font-size: 15px;
+  background-color: #888888;
+}
+
+.page-footer {
+  background-color: var(--basic-dark);
+}
+
+.page ul {
+  list-style-type: none;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.page-header {
+  background-color: var(--special-yellow);
+}
+
+.page-body {
+  background-color: var(--basic-white);
+  width: 1200px;
+}
+
+.text-disabled {
+  position: absolute;
+  font-size: 0px;
+}
+
+.text-regular-link {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: var(--basic-half-grey);
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.text-header {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 47px;
+}
+
+.text-subheader-black-uppercase {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-subheader-white-uppercase {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-white);
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-subheader-black-regular {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.text-subheader-white {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-white);
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.list-dots {
+  list-style: circle;
+  font-weight: 800;
+  color: var(--basic-black);
+}
+
+.img-partner-logo {
+  filter: saturate(0%);
+  opacity: 30%;
+}
+
+.categories img {
+  background-color: var(--special-yellow);
+  background-size: 160px 160px;
+}
+
+.catalog-nav {
+  background-color: #ebebeb;
+}
+
+.main-filter {
+  background-color: var(--basic-grey-light);
+  font-size: 14px;
+}
+
+.sort-goods {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.sort-goods a {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.goods-catalog {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.goods-catalog span {
+  font-family: "Gilroy";
+  font-weight: 300;
+  font-size: 16px;
+  opacity: 0.25;
+}
+
+.text-features-value {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-weight: 300;
+  font-size: 36px;
+}
+
+.text-features-descr {
+  font-family: "Gilroy", "Arial", sans-serif;
+  color: var(--basic-black);
+  font-weight: 300;
+  font-size: 13px;
+}
