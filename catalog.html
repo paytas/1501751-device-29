@@ -25,14 +25,18 @@
         <!-- Первая секция шапки -->
         <div class="main-nav-top">
           <form action="search.html">
+            <img src="/img/icon-search.svg" width="16" height="16" alt="Поиск">
             <input type="search" placeholder="Поиск по сайту" />
             <button class="button search-button" type="submit">Найти</button>
           </form>
-          <div class="main-nav-userData">
-            <a class="text-regular-link" href="user-profile.html">Валентин Петухов</a>
+          <div class="header-nav-userdata">
+            <a class="text-regular-link" href="user-profile.html"><img src="/img/icon-user.svg" width="13" height="14"
+                alt="Пользователь">Валентин Петухов</a>
             <a class="text-regular-link" href="logout.html">Выйти</a>
-            <a class="text-regular-link" href="#">Сравнить</a>
-            <a class="text-regular-link" href="#">Корзина</a>
+            <a class="text-regular-link" href="#"><img src="/img/icon-compare.svg" width="14" height="14"
+                alt="Сравнить"> Сравнить</a>
+            <a class="text-regular-link" href="#"><img src="/img/icon-cart.svg" width="10" height="10"
+                alt="Корзина">Корзина</a>
           </div>
         </div>
         <!-- Вторая секция шапки -->
@@ -166,34 +170,35 @@
             <img src="img/main-logo-yellow.svg" width="163" height="35" alt="Логотип магазина «DEVICE»" />
           </a>
         </div>
-        <ul>
-          <li><a class="text-regular-link" href="user.html">Валентин Петухов</a></li>
-          <li><a class="text-regular-link" href="login.html">Войти</a></li>
-          <li><a class="text-regular-link" href="compare.html">Сравнить</a></li>
-          <li><a class="text-regular-link" href="cart.html">Корзина</a></li>
-        </ul>
-      </div>
-      <!-- 2 уровень -->
-      <div>
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul>
-          <li><a class="text-subheader-white-uppercase" href="delivery.html">Доставка</a></li>
-          <li><a class="text-subheader-white-uppercase" href="warranty.html">Гарантия</a></li>
-          <li><a class="text-subheader-white-uppercase" href="contact.html">Контакты</a></li>
-        </ul>
-        <p><a class="text-regular-link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
-      </div>
-      <!-- 3 уровень -->
-      <div>
-        <ul>
-          <li><a href="#"><img src="/img/icon_facebook.svg" alt="Фейсбук" width="32" height="32"></a></li>
-          <li><a href="#"><img src="/img/icon_instagram.svg" alt="Инстаграм" width="32" height="32"></a></li>
-          <li><a href="#"><img src="/img/icon-twitter.svg" alt="Твиттер" width="32" height="32"></a></li>
-        </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/htmlac-logo.svg" width="27" height="34" alt="HTML Academy" />
-        </a>
-      </div>
+        <div class="footer-nav-userdata">
+          <ul>
+            <li><a class="text-regular-link" href="user.html">Валентин Петухов</a></li>
+            <li><a class="text-regular-link" href="login.html">Войти</a></li>
+            <li><a class="text-regular-link" href="compare.html">Сравнить</a></li>
+            <li><a class="text-regular-link" href="cart.html">Корзина</a></li>
+          </ul>
+        </div>
+        <!-- 2 уровень -->
+        <div>
+          <p>г. Москва, ул. Строителей, 15</p>
+          <ul class="footer-services">
+            <li><a class="text-subheader-white-uppercase" href="delivery.html">Доставка</a></li>
+            <li><a class="text-subheader-white-uppercase" href="warranty.html">Гарантия</a></li>
+            <li><a class="text-subheader-white-uppercase" href="contact.html">Контакты</a></li>
+          </ul>
+          <p><a class="text-regular-link" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a></p>
+        </div>
+        <!-- 3 уровень -->
+        <div>
+          <ul class="social-networks">
+            <li><a href="#"><img src="/img/icon-facebook.svg" alt="Фейсбук" width="32" height="32"></a></li>
+            <li><a href="#"><img src="/img/icon-instagram.svg" alt="Инстаграм" width="32" height="32"></a></li>
+            <li><a href="#"><img src="/img/icon-twitter.svg" alt="Твиттер" width="32" height="32"></a></li>
+          </ul>
+          <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/htmlac-logo.svg" width="27" height="34" alt="HTML Academy" />
+          </a>
+        </div>
     </footer>
   </body>
 </html>

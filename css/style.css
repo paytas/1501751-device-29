@@ -39,6 +39,7 @@
 }
 
 /* Variables */
+
 :root {
   --basic-black: #000000;
   --basic-dark: #363636;
@@ -47,6 +48,7 @@
   --basic-grey-light: #e5e5e5;
   --special-yellow: #f7e296;
   --special-yellow-dark: #f0c52e;
+  --special-yellow-icon: #ffc600;
   --special-green: #91c92f;
   --status-pink: #f6dada;
   --basic-white: #ffffff;
@@ -54,16 +56,13 @@
   --white-alpha60: rgba(255, 255, 255, 0.6);
 }
 
+/* Base styles */
 .page {
   font-family: "Open Sans", "Arial", sans-serif;
   color: var(--basic-half-grey);
   font-weight: 300;
   font-size: 15px;
   background-color: #888888;
-}
-
-.page-footer {
-  background-color: var(--basic-dark);
 }
 
 .page ul {
@@ -76,6 +75,9 @@
 
 .page-header {
   background-color: var(--special-yellow);
+}
+.page-footer {
+  background-color: var(--basic-dark);
 }
 
 .page-body {
@@ -90,7 +92,7 @@
 
 .text-regular-link {
   font-family: "Open Sans", "Arial", sans-serif;
-  color: var(--basic-half-grey);
+  color: var(--basic-black);
   font-weight: 300;
   font-size: 15px;
 }
@@ -136,15 +138,28 @@
   text-transform: capitalize;
 }
 
+.text-footer {
+  font-family: "Open Sans", "Arial", sans-serif;
+  color: var(--basic-white);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .list-dots {
-  list-style: circle;
   font-weight: 800;
   color: var(--basic-black);
 }
 
+.list-dots li:before {
+  color: --basic-grey-light;
+  content: "○ ";
+  padding-right: 24px;
+}
+
 .img-partner-logo {
   filter: saturate(0%);
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .categories img {
@@ -204,4 +219,121 @@
   color: var(--basic-black);
   font-weight: 300;
   font-size: 13px;
+}
+
+/* Active Elements*/
+.header-logo:hover {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.3;
+}
+
+.bottom-logo:hover {
+  opacity: 0.6;
+}
+
+.bottom-logo:active {
+  opacity: 0.3;
+}
+
+.page-header a:hover {
+  opacity: 0.6;
+}
+
+.page-header a:active {
+  opacity: 0.3;
+}
+/* Main Slider */
+.details-link {
+  background-color: var(--special-yellow-dark);
+  /* размер задника */
+}
+
+.details-link:hover {
+  /* размер задника */
+}
+.details-link a:active {
+  /* размер задника */
+  opacity: 0.2;
+}
+
+.categories img:hover {
+  background-color: var(--special-yellow-dark);
+}
+.categories img:active {
+  opacity: 0.3;
+  background-color: var(--special-yellow-dark);
+}
+
+/* Slider services */
+.slider-services a {
+  background-color: var(--special-yellow-dark);
+}
+.slider-services a:hover {
+  /* меняется размер задника*/
+}
+
+.slider-services a:active {
+  color: var(--special-yellow-dark);
+  background-color: var(--basic-black);
+}
+
+/* Footer */
+.img-partner-logo:hover {
+  filter: saturate(100%);
+  opacity: 1;
+}
+
+.footer-nav-userdata img {
+  opacity: 1;
+}
+
+.footer-nav-userdata a {
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+.footer-nav-userdata img:hover {
+  opacity: 0.6;
+}
+.footer-nav-userdata a:hover {
+  opacity: 1;
+}
+
+.footer-nav-userdata a:active {
+  opacity: 0.3;
+}
+
+.footer-nav-userdata img:active {
+  opacity: 0.3;
+}
+
+.footer-services a:hover {
+  opacity: 0.6;
+}
+
+.footer-services a:active {
+  opacity: 0.3;
+}
+
+.social-networks a {
+  opacity: 0.3;
+}
+
+.social-networks img:hover {
+  opacity: 0.6;
+}
+
+.social-networks img:active {
+  opacity: 0.1;
+}
+
+.academy-logo:hover {
+  opacity: 0.6;
+}
+
+.academy-logo:active {
+  opacity: 0.1;
 }
