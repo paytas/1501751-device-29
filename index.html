@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Девайс</title>
     <!-- Шрифты -->
-    <link href="/css/normalize.css" rel="stylesheet">
-    <link href="/css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="page-body">
@@ -22,17 +22,23 @@
         <!-- Первая секция шапки -->
         <div class="main-nav-top">
           <form class="main-search-form" action="search.html">
-            <img src="/img/icon-search.svg" width="16" height="16" alt="Поиск">
+            <div class="icon-search"></div>
             <input type="search" placeholder="Поиск по сайту" />
             <button class="button search-button" type="submit">Найти</button>
           </form>
           <div class="header-nav-userdata">
-            <a class="text-regular-link" href="blank.html"><img src="/img/icon-user.svg" width="13" height="14"
-                alt="Пользователь"> Войти</a>
-            <a class="text-regular-link" href="#"><img src="/img/icon-compare.svg" width="14" height="14"
-                alt="Сравнить"> Сравнить</a>
-            <a class="text-regular-link" href="#"><img src="/img/icon-cart.svg" width="10" height="10" alt="Корзина">
-              Корзина</a>
+            <a class="text-regular-link" href="blank.html">
+              <div class="icon-user"></div>
+              Войти
+            </a>
+            <a class="text-regular-link" href="#">
+              <div class="icon-compare"></div>
+              Сравнить
+            </a>
+            <a class="text-regular-link" href="#">
+              <div class="icon-cart"></div>
+              Корзина
+            </a>
           </div>
         </div>
         <!-- Вторая секция шапки -->
@@ -127,23 +133,23 @@
         <h2 class="text-dasabled">Категории товаров</h2>
         <ul>
           <li><a class="text-subheader-black-regular" href="vr.html">
-              <img src="/img/category-vr.svg" alt="Виртуальная реальность" width="97" height="55">Виртуальная
+              <img src="img/category-vr.svg" alt="Виртуальная реальность" width="97" height="55">Виртуальная
               реальность</a></li>
 
           <li><a class="text-subheader-black-regular" href="monopods.html">
-              <img src="/img/category-monopod.svg" alt="Моноподы для селфи" width="86" height="117">Моноподы для
+              <img src="img/category-monopod.svg" alt="Моноподы для селфи" width="86" height="117">Моноподы для
               селфи</a></li>
 
           <li><a class="text-subheader-black-regular" href="actioncams.html">
-              <img src="/img/category-actioncam.svg" alt="Экшн-камеры" width="71" height="87">Экшн-камеры</a></li>
+              <img src="img/category-actioncam.svg" alt="Экшн-камеры" width="71" height="87">Экшн-камеры</a></li>
 
-          <li><a class="text-subheader-black-regular" href="fitnesbands.html"> <img src="/img/category-fitnesband.svg"
+          <li><a class="text-subheader-black-regular" href="fitnesbands.html"> <img src="img/category-fitnesband.svg"
                 alt="Фитнес-браслеты" width="107" height="65">Фитнес-браслеты</a></li>
 
           <li><a class="text-subheader-black-regular" href="smartwatches.html">
-              <img src="/img/category-smartwatch.svg" alt="Умные часы" width="56" height="98">Умные часы</a></li>
+              <img src="img/category-smartwatch.svg" alt="Умные часы" width="56" height="98">Умные часы</a></li>
           <li><a class="text-subheader-black-regular" href="copters.html">
-              <img src="/img/category-copters.svg" alt="Квадрокоптеры" width="132" height="69S">
+              <img src="img/category-copters.svg" alt="Квадрокоптеры" width="132" height="69S">
               Квадрокоптеры</a></li>
         </ul>
         <!-- Категории товаров. Конец -->
@@ -159,7 +165,7 @@
         <ul>
           <li>
             <h3 class="text-header">Доставка</h3>
-            <img src="/img/services-delievery.svg" height="136" width="164" alt="Доставка">
+            <img src="img/services-delievery.svg" height="136" width="164" alt="Доставка">
             <p>
               Мы с удовольствием доставим ваш товар прямо к вашему<br />
               подъезду совершенно бесплатно! Ведь мы неплохо<br />
@@ -168,7 +174,7 @@
           </li>
           <li>
             <h3 class="text-header">Гарантия</h3>
-            <img src="/img/services-warranty.svg" height="188" width="156" alt="Гарантия">
+            <img src="img/services-warranty.svg" height="188" width="156" alt="Гарантия">
             <p>
               Если из-за возгорания купленного у нас товара у вас сгорит дом —
               <br />
@@ -178,7 +184,7 @@
           </li>
           <li>
             <h3 class="text-header">Кредит</h3>
-            <img src="/img/services-credit.svg" height="188" width="156" alt="Кредит">
+            <img src="img/services-credit.svg" height="188" width="156" alt="Кредит">
             <p>
               Залезть в долговую яму стало проще! Кредитные консультанты<br />
               подберут для вас наиболее выгодные <br />
@@ -259,12 +265,24 @@
       <!-- 1 уровень -->
       <div class="footer-nav-userdata">
         <ul>
-          <li><a class="text-regular-link" href="login.html"><img src="/img/icon-user-yellow.svg" width="13" height="14"
-                alt="Пользователь"> Войти</a></li>
-          <li><a class="text-regular-link" href="compare.html"><img src="/img/icon-compare-yellow.svg" width="14"
-                height="14" alt="Сравнить">Сравнить</a></li>
-          <li><a class="text-regular-link" href="cart.html"><img src="/img/icon-cart-yellow.svg" width="10" height="10"
-                alt="Корзина">Корзина</a></li>
+          <li><a class="text-regular-link" href="login.html">
+              <div class="icon-user-yellow"></div>
+              <!--             <img src="img/icon-user-yellow.svg" width="13" height="14"
+                alt="Пользователь">  -->
+              Войти
+            </a></li>
+          <li><a class="text-regular-link" href="compare.html">
+              <div class="icon-compare-yellow"></div>
+              <!--             <img src="img/icon-compare-yellow.svg" width="14"
+                height="14" alt="Сравнить"> -->
+              Сравнить
+            </a></li>
+          <li><a class="text-regular-link" href="cart.html">
+              <div class="icon-cart-yellow"></div>
+              <!--             <img src="img/icon-cart-yellow.svg" width="10" height="10"
+                alt="Корзина"> -->
+              Корзина
+            </a></li>
         </ul>
       </div>
       <!-- 2 уровень -->
@@ -280,9 +298,9 @@
       <!-- 3 уровень -->
       <div>
         <ul class="social-networks">
-          <li><a href="#"><img src="/img/icon-facebook.svg" alt="Фейсбук" width="32" height="32"></a></li>
-          <li><a href="#"><img src="/img/icon-instagram.svg" alt="Инстаграм" width="32" height="32"></a></li>
-          <li><a href="#"><img src="/img/icon-twitter.svg" alt="Твиттер" width="32" height="32"></a></li>
+          <li><a href="#"><img src="img/icon-facebook.svg" alt="Фейсбук" width="32" height="32"></a></li>
+          <li><a href="#"><img src="img/icon-instagram.svg" alt="Инстаграм" width="32" height="32"></a></li>
+          <li><a href="#"><img src="img/icon-twitter.svg" alt="Твиттер" width="32" height="32"></a></li>
         </ul>
         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/htmlac-logo.svg" width="27" height="34" alt="HTML Academy" />
