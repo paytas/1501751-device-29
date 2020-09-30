@@ -254,6 +254,15 @@
   letter-spacing: 0.1em;
 }
 
+.section-about p {
+  line-height: 28px;
+}
+
+.slider-services p {
+  line-height: 28px;
+}
+}
+
 .catalog-nav a {
   letter-spacing: 0.1em;
 }
