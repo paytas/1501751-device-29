@@ -54,11 +54,13 @@
   --basic-white: #ffffff;
   --white-alpha30: rgba(255, 255, 255, 0.3);
   --white-alpha60: rgba(255, 255, 255, 0.6);
+  --font-opensans: "Open Sans", "Arial", sans-serif;
+  --font-gilroy: "Gilroy", "Arial", sans-serif;
 }
 
 /* Base styles */
 .page {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   color: var(--basic-half-grey);
   font-weight: 300;
   font-size: 15px;
@@ -76,6 +78,10 @@
 .page img {
   max-width: 100%;
   height: auto;
+}
+
+.page button {
+  border: none;
 }
 
 .page-header {
@@ -99,7 +105,7 @@
 /* Fonts */
 
 .text-regular-link {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: var(--font-opensans);
   color: var(--basic-black);
   font-weight: 300;
   font-size: 15px;
@@ -107,7 +113,7 @@
 }
 
 .text-header {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   color: var(--basic-black);
   font-weight: 800;
   font-size: 47px;
@@ -123,30 +129,26 @@
   letter-spacing: normal;
 }
 
-.text-subheader-black-uppercase {
-  font-family: "Gilroy", "Arial", sans-serif;
+.text-subheader {
+  font-family: var(--font-gilroy);
   color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
-  text-decoration: none;
-  text-transform: uppercase;
   line-height: 22px;
   letter-spacing: 0.2em;
 }
 
-.text-subheader-white-uppercase {
-  font-family: "Gilroy", "Arial", sans-serif;
+.black-uppercase {
+  text-transform: uppercase;
+}
+
+.white-uppercase {
   color: var(--basic-white);
-  font-weight: 800;
-  font-size: 18px;
-  text-decoration: none;
   text-transform: uppercase;
-  line-height: 22px;
-  letter-spacing: 0.2em;
 }
 
-.text-subheader-black-regular {
-  font-family: "Gilroy", "Arial", sans-serif;
+.black-regular {
+  font-family: var(--font-gilroy);
   color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
@@ -154,17 +156,8 @@
   letter-spacing: 0.05em;
 }
 
-.text-subheader-white {
-  font-family: "Gilroy", "Arial", sans-serif;
-  color: var(--basic-white);
-  font-weight: 800;
-  font-size: 18px;
-  text-transform: capitalize;
-  line-height: 22px;
-}
-
 .text-footer {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: var(--font-opensans);
   color: var(--basic-white);
   font-weight: 300;
   font-size: 15px;
@@ -172,7 +165,7 @@
 }
 
 .list-dots {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
@@ -187,6 +180,7 @@
 
 .catalog-nav {
   background-color: #ebebeb;
+  letter-spacing: 0.1em;
 }
 
 .img-partner-logo {
@@ -205,31 +199,28 @@
 }
 
 .sort-goods {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
-  text-decoration: none;
 }
 
 .sort-goods a {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: var(--font-opensans);
   color: var(--basic-black);
   font-weight: 400;
   font-size: 14px;
-  text-decoration: none;
 }
 
 .goods-catalog {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   color: var(--basic-black);
   font-weight: 800;
   font-size: 18px;
-  text-decoration: none;
 }
 
 .goods-catalog span {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -237,7 +228,7 @@
 }
 
 .text-features-value {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   color: var(--basic-black);
   font-weight: 300;
   font-size: 36px;
@@ -246,11 +237,20 @@
 }
 
 .text-features-descr {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   color: var(--basic-black);
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.comparsion-button {
+  font-family: var(--font-opensans);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
   letter-spacing: 0.1em;
 }
 
@@ -261,14 +261,9 @@
 .slider-services p {
   line-height: 28px;
 }
-}
-
-.catalog-nav a {
-  letter-spacing: 0.1em;
-}
 
 .main-filter {
-  font-family: "Open Sans", "Arial", sans-serif;
+  font-family: var(--font-opensans);
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -277,7 +272,7 @@
 }
 
 .main-filter legend {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   font-style: normal;
   color: var(--basic-black);
   font-weight: 800;
@@ -287,7 +282,7 @@
 }
 
 .main-filter h2 {
-  font-family: "Gilroy", "Arial", sans-serif;
+  font-family: var(--font-gilroy);
   font-style: normal;
   font-weight: 800;
   font-size: 16px;
@@ -309,8 +304,8 @@
 
 .icon-arrow-nav {
   display: inline-block;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   color: var(--basic-black);
   background-image: url(../img/icon-arrow-nav.svg);
   background-size: 12px 12px;
@@ -387,7 +382,60 @@
   background-repeat: no-repeat;
 }
 
+.icon-sort-increase {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  color: var(--basic-black);
+  background-image: url(../img/icon-increase.svg);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+}
+
+.icon-sort-decrease {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  color: var(--basic-black);
+  background-image: url(../img/icon-decrease.svg);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+}
+
+/* Buttons */
+.filter-button {
+  background: var(--special-yellow-dark);
+  width: 200px;
+  height: 8px;
+  text-decoration-color: var(--special-yellow-dark);
+}
+
 /* Active Elements*/
+
+.categories-crumbs-nav a {
+  opacity: 0.3;
+}
+
+.categories-crumbs-nav a:hover {
+  opacity: 0.6;
+}
+
+.categories-crumbs-nav a:active {
+  opacity: 0.1;
+}
+
+.sort-goods li {
+  opacity: 0.3;
+}
+
+.sort-goods li:hover {
+  opacity: 0.6;
+}
+
+.sort-goods li:active {
+  opacity: 1;
+}
+
 .header-logo:hover {
   opacity: 0.6;
 }
@@ -414,13 +462,14 @@
 /* Main Slider */
 .details-link {
   background-color: var(--special-yellow-dark);
-  /* размер задника */
+  background-size: 200px 8px;
 }
 
 .details-link:hover {
+  background-size: 200px 8px;
   /* размер задника */
 }
-.details-link a:active {
+.details-link:active {
   /* размер задника */
   opacity: 0.2;
 }
