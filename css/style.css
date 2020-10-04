@@ -104,12 +104,75 @@
 
 /* Fonts */
 
-.text-regular-link {
+.link-regular {
   font-family: var(--font-opensans);
   color: var(--basic-black);
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
+}
+
+.link-important {
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.link-categories {
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+.link-bumblebee {
+  color: var(--basic-black);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 220px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.link-bumblebee:before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  background: var(--special-yellow-dark);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 7px;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.slider-promo .link-bumblebee:before {
+  background: var(--special-yellow);
+}
+
+.slider-services .link-bumblebee {
+  width: 160px;
+}
+
+.main-filter .link-bumblebee {
+  width: 200px;
+}
+.section-about .link-bumblebee {
+  width: 260px;
+}
+
+.footer-services .link-important {
+  color: var(--basic-white);
 }
 
 .text-header {
@@ -127,33 +190,6 @@
 
 .container h2 {
   letter-spacing: normal;
-}
-
-.text-subheader {
-  font-family: var(--font-gilroy);
-  color: var(--basic-black);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.2em;
-}
-
-.black-uppercase {
-  text-transform: uppercase;
-}
-
-.white-uppercase {
-  color: var(--basic-white);
-  text-transform: uppercase;
-}
-
-.black-regular {
-  font-family: var(--font-gilroy);
-  color: var(--basic-black);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.05em;
 }
 
 .text-footer {
@@ -242,15 +278,6 @@
   font-weight: 300;
   font-size: 13px;
   line-height: 15px;
-  letter-spacing: 0.1em;
-}
-
-.comparsion-button {
-  font-family: var(--font-opensans);
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 18px;
   letter-spacing: 0.1em;
 }
 
@@ -412,6 +439,93 @@
 
 /* Active Elements*/
 
+/* Bumblebee link*/
+
+.link-bumblebee:hover:before {
+  height: 100%;
+  top: 0;
+}
+
+.link-bumblebee:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.slider-services .link-bumblebee:active {
+  color: var(--special-yellow);
+}
+
+.slider-services .link-bumblebee:active::before {
+  background: var(--basic-black);
+  width: 280px;
+}
+
+.main-filter .link-bumblebee:active {
+  border: none;
+}
+
+/*Bumblebee button*/
+.button-bumblebee {
+  font-family: var(--font-gilroy);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.button-bumblebee:before {
+  content: "";
+  display: inline-block;
+  height: 8px;
+  background: var(--special-yellow-dark);
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 7px;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.button-bumblebee:hover:before {
+  height: 100%;
+  top: 0px;
+}
+
+.button-bumblebee:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+/*Comparsion button*/
+.button-comparsion {
+  font-family: var(--font-opensans);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.button-comparsion:hover {
+  opacity: 1;
+}
+
+.button-comparsion:active {
+  opacity: 0.2;
+}
+
 .categories-crumbs-nav a {
   opacity: 0.3;
 }
@@ -483,17 +597,6 @@
 }
 
 /* Slider services */
-.slider-services a {
-  background-color: var(--special-yellow-dark);
-}
-.slider-services a:hover {
-  /* меняется размер задника*/
-}
-
-.slider-services a:active {
-  color: var(--special-yellow-dark);
-  background-color: var(--basic-black);
-}
 
 /* Footer */
 .img-partner-logo:hover {
